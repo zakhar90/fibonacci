@@ -1,3 +1,17 @@
+function fibonacci(n) {
+  var fib, f1, f2;
+  for (i = 1; i <= n; i++) {
+    fib = f1 + f2 || 1;
+    f1 = f2;
+    f2 = fib;
+  }
+  return fib;
+}
+
+alert(fibonacci(+prompt('Яке число Фібоначчі вивести на екран?')));
+
+
+
 // function fibonacci(n) {
 //   var num;
 
@@ -13,6 +27,8 @@
 // alert(fibonacci(+prompt('Яке число Фібоначчі вивести на екран?')));
 
 
+
+
 // function fibonacciBinet(n) {
 //   var sq5 = Math.sqrt(5);
 //   var a = (1 + sq5) / 2;
@@ -24,14 +40,4 @@
 
 
 
-function fibonacci(n) {
-  var fib, f1, f2;
-  for (i = 1; i <= n; i++) {
-    fib = f1 + f2 || 1;
-    f1 = f2;
-    f2 = fib;
-  }
-  return fib;
-}
 
-alert(fibonacci(+prompt('Яке число Фібоначчі вивести на екран?')));
