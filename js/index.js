@@ -1,11 +1,10 @@
 function fibonacci(n) {
-  var fib, f1, f2;
-  for (i = 1; i <= n; i++) {
-    fib = f1 + f2 || 1;
-    f1 = f2;
-    f2 = fib;
-  }
-  return fib;
+    let n1 = [1, 1];
+
+    for (var i = 2; i < n; i++) {
+        n1[i] = n1 [i-1]+ n1 [i-2];
+    }
+    return n1 [n-1];
 }
 
 alert(fibonacci(+prompt('Яке число Фібоначчі вивести на екран?')));
