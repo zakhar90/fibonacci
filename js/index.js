@@ -2,7 +2,7 @@ function fibonacci(n) {
     let n1 = [1, 1];
 
     for (var i = 2; i < n; i++) {
-        n1[i] = n1 [i-1]+ n1 [i-2];
+        n1[i] = n1[i-1]+ n1[i-2];
     }
     return n1 [n-1];
 }
